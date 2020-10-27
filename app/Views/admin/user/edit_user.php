@@ -11,7 +11,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">User</a></li>
-              <li class="breadcrumb-item active"><a href="#">Add User</a></li>
+              <li class="breadcrumb-item active"><a href="#">Edit User</a></li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -23,7 +23,7 @@
     <section class="content">
      <div class="card card-orange card-outline">
             <div class="card-header">
-                <h3 class="card-title">Add User</h3>
+                <h3 class="card-title">Edit User</h3>
                 <div class="float-right">
                   <a href="<?php echo base_url('Administator/user'); ?>" class="btn btn-warning btn-flat">
                      <i class="fa fa-undo"> back</i>
@@ -33,12 +33,12 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-6 mx-auto">
-                        <form action="/administator/saveUser" method="post">
+                        <form action="/administator/updateUser/<?= $usr['id_user']; ?>" method="post">
                         <?= csrf_field(); ?>
                             <div class="form-group row">
                                 <label for="inputName" class="col-sm-4 col-form-label">Name</label>
                                 <div class="col-sm-8">
-                                <input type="text" class="form-control <?= ($validation->hasError('inputName')) ? 'is-invalid' : '' ?>" id="inputName" name="inputName" placeholder="Name" autofocus>
+                                <input type="text" class="form-control <?= ($validation->hasError('inputName')) ? 'is-invalid' : '' ?>" id="inputName" name="inputName" placeholder="Name" value="<?= $usr['name']; ?>" autofocus>
                                 <div class="invalid-feedback">
                                   <?= $validation->getError('inputName'); ?>
                                 </div>
@@ -47,7 +47,7 @@
                             <div class="form-group row">
                                 <label for="inputEmail" class="col-sm-4 col-form-label">Email</label>
                                 <div class="col-sm-8">
-                                <input type="email" class="form-control <?= ($validation->hasError('inputEmail')) ? 'is-invalid' : '' ?>" id="inputEmail" name="inputEmail" placeholder="Email">
+                                <input type="email" class="form-control <?= ($validation->hasError('inputEmail')) ? 'is-invalid' : '' ?>" id="inputEmail" name="inputEmail" placeholder="Email" value="<?= $usr['email']; ?>">
                                 <div class="invalid-feedback">
                                   <?= $validation->getError('inputEmail'); ?>
                                 </div>
@@ -75,16 +75,16 @@
                               <label for="inputGender" class="col-sm-4 col-form-label" >Gender</label>
                               <div class="col-sm-8">
                                 <select class="form-control" name="inputGender" id="inputGender" required>
-                                  <option value=""> - Select - </option>
-                                  <option value="L">Male</option>
-                                  <option value="P">Female</option>
+                                  <option value="" > - Select - </option>
+                                  <option value="L" <?= $usr['gender'] == 'L' ? 'selected' : ''  ?>>Male</option>
+                                  <option value="P" <?= $usr['gender'] == 'P' ? 'selected' : ''  ?>>Female</option>
                                 </select>
                               </div>
                             </div>
                             <div class="form-group row">
                                 <label for="inputPhone" class="col-sm-4 col-form-label">Phone</label>
                                 <div class="col-sm-8">
-                                <input type="numeric" class="form-control <?= ($validation->hasError('inputPhone')) ? 'is-invalid' : '' ?>" id="inputPhone" name="inputPhone" placeholder="Phone">
+                                <input type="numeric" class="form-control <?= ($validation->hasError('inputPhone')) ? 'is-invalid' : '' ?>" id="inputPhone" name="inputPhone" placeholder="Phone" value="<?= $usr['phone']; ?>">
                                 <div class="invalid-feedback">
                                   <?= $validation->getError('inputPhone'); ?>
                                 </div>

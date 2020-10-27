@@ -56,7 +56,7 @@
                             <td><?php echo $usr['phone'] ?></td>
                             <td><?php echo $usr['gender'] ?></td>
                             <td class="text-center">
-                                <a ><?php echo anchor('user/edit/'.$usr['id_user'], '<div class="btn btn-primary btn-xs"><i class="fa fa-edit"></i></div>') ?>
+                                <a href="/administator/updateUser/<?= $usr['id_user']; ?>" ><div class="btn btn-primary btn-xs"><i class="fa fa-edit"></i></div>
                                     </a>
                                 <form action="/administator/user/<?= $usr['id_user']; ?>" class="d-inline" method="post">
                                   <?= csrf_field(); ?>

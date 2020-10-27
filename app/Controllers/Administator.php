@@ -35,18 +35,18 @@ class Administator extends BaseController{
         echo view('template_admin', $data);
     }
     public function saveUser(){
-        // if(!$this->validate([
-        //     'inputName' => 'required'
-        //     'inputEmail' => 'required|is_unique[t_user.email]',
-        //     'inputPassword' => 'required|min_length[8]',
-        //     'inputPassword2' => 'required|matches[inputPassword]',
-        //     'inputPhone' => 'numeric'
-        // ])){
-        //     $validation = \Config\Services::validation();
-        //     return redirect()->to('addUser')->withInput()->with('validation', $validation);
-        // }
+        if(!$this->validate([
+            'inputName' => 'required',
+            'inputEmail' => 'required|is_unique[t_user.email]',
+            'inputPassword' => 'required|min_length[8]',
+            'inputPassword2' => 'required|matches[inputPassword]',
+            'inputPhone' => 'alpha_numeric_punct'
+        ])){
+            $validation = \Config\Services::validation();
+            return redirect()->to('addUser')->withInput()->with('validation', $validation);
+        }
         
-        $this->M_user->save([
+        $data = array(
             'id_user' => (int)floor(microtime(true)),
             'email' => $this->request->getPost('inputEmail'),
             'name' => $this->request->getPost('inputName'),
@@ -54,13 +54,30 @@ class Administator extends BaseController{
             'phone' => $this->request->getPost('inputPhone'),
             'gender' => $this->request->getPost(('inputGender')),
             'img' => 'null'
-        ]);
-        dd($this->M_user->save());
-        // dd($this->M_user->getLastQuery());
-        // return redirect()->to('user');
+        );
+        $this->M_user->saveUser($data);
+        return redirect()->to('user');
     }
     public function delUser($id_user){
         $this->M_user->delete($id_user);
         return redirect()->to('/administator/user');
+    }
+    public function updateUser($id){
+        // if(!$this->validate([
+        //     'inputName' => 'required',
+        //     'inputEmail' => 'required|is_unique[t_user.email]',
+        //     'inputPhone' => 'alpha_numeric_punct'
+        // ])){
+        //     $validation = \Config\Services::validation();
+        //     return redirect()->to('/administration/updateUser')->withInput()->with('validation', $validation);
+        // }
+        $data = [
+            'title' => 'User',
+            'validation' => \Config\Services::validation(),
+            'usr' => $this->M_user->getUser($id),
+            'content' => 'admin/user/edit_user'
+        ];
+        // dd($data);
+        echo view('template_admin',$data);
     }
 }
