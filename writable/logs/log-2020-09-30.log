@@ -1,0 +1,310 @@
+CRITICAL - 2020-09-30 03:31:06 --> Allowed fields must be specified for model: App\Models\M_user
+#0 /var/www/html/wwo/system/Model.php(1265): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\M_us...')
+#1 /var/www/html/wwo/system/Model.php(735): CodeIgniter\Model->doProtectFields(Array)
+#2 /var/www/html/wwo/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#3 /var/www/html/wwo/app/Controllers/Administator.php(40): CodeIgniter\Model->save(Array)
+#4 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#5 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#6 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-30 03:35:50 -->  route cannot be found while reverse-routing.
+#0 /var/www/html/wwo/system/HTTP/RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 /var/www/html/wwo/system/Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 /var/www/html/wwo/app/Controllers/Administator.php(43): redirect('administator/us...')
+#3 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#4 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#5 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-30 03:43:42 --> Column 'img' cannot be null
+#0 /var/www/html/wwo/system/Database/MySQLi/Connection.php(331): mysqli->query('INSERT INTO `t_...')
+#1 /var/www/html/wwo/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 /var/www/html/wwo/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 /var/www/html/wwo/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 /var/www/html/wwo/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/wwo/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 /var/www/html/wwo/app/Controllers/Administator.php(37): CodeIgniter\Model->save(Array)
+#7 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#8 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#9 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-30 03:45:17 --> Duplicate entry '0' for key 'PRIMARY'
+#0 /var/www/html/wwo/system/Database/MySQLi/Connection.php(331): mysqli->query('INSERT INTO `t_...')
+#1 /var/www/html/wwo/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 /var/www/html/wwo/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 /var/www/html/wwo/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 /var/www/html/wwo/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/wwo/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 /var/www/html/wwo/app/Controllers/Administator.php(42): CodeIgniter\Model->save(Array)
+#7 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#8 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#9 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-30 04:01:39 --> Too few arguments to function CodeIgniter\Model::save(), 0 passed in /var/www/html/wwo/app/Controllers/Administator.php on line 43 and exactly 1 expected
+#0 /var/www/html/wwo/app/Controllers/Administator.php(43): CodeIgniter\Model->save()
+#1 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#2 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#3 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-30 04:02:43 --> Too few arguments to function CodeIgniter\Model::save(), 0 passed in /var/www/html/wwo/app/Controllers/Administator.php on line 43 and exactly 1 expected
+#0 /var/www/html/wwo/app/Controllers/Administator.php(43): CodeIgniter\Model->save()
+#1 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#2 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#3 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-30 04:03:13 --> Too few arguments to function CodeIgniter\Model::save(), 0 passed in /var/www/html/wwo/app/Controllers/Administator.php on line 43 and exactly 1 expected
+#0 /var/www/html/wwo/app/Controllers/Administator.php(43): CodeIgniter\Model->save()
+#1 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#2 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#3 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-30 04:06:46 --> Too few arguments to function CodeIgniter\Model::save(), 0 passed in /var/www/html/wwo/app/Controllers/Administator.php on line 44 and exactly 1 expected
+#0 /var/www/html/wwo/app/Controllers/Administator.php(44): CodeIgniter\Model->save()
+#1 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#2 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#3 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-30 04:07:51 --> Column 'email' cannot be null
+#0 /var/www/html/wwo/system/Database/MySQLi/Connection.php(331): mysqli->query('INSERT INTO `t_...')
+#1 /var/www/html/wwo/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 /var/www/html/wwo/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 /var/www/html/wwo/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 /var/www/html/wwo/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/wwo/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 /var/www/html/wwo/app/Controllers/Administator.php(42): CodeIgniter\Model->save(Array)
+#7 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#8 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#9 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-30 04:08:18 --> Column 'email' cannot be null
+#0 /var/www/html/wwo/system/Database/MySQLi/Connection.php(331): mysqli->query('INSERT INTO `t_...')
+#1 /var/www/html/wwo/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 /var/www/html/wwo/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 /var/www/html/wwo/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 /var/www/html/wwo/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/wwo/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 /var/www/html/wwo/app/Controllers/Administator.php(43): CodeIgniter\Model->save(Array)
+#7 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#8 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#9 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-30 04:08:19 --> Column 'email' cannot be null
+#0 /var/www/html/wwo/system/Database/MySQLi/Connection.php(331): mysqli->query('INSERT INTO `t_...')
+#1 /var/www/html/wwo/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 /var/www/html/wwo/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 /var/www/html/wwo/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 /var/www/html/wwo/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/wwo/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 /var/www/html/wwo/app/Controllers/Administator.php(43): CodeIgniter\Model->save(Array)
+#7 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#8 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#9 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-30 04:08:37 --> Column 'email' cannot be null
+#0 /var/www/html/wwo/system/Database/MySQLi/Connection.php(331): mysqli->query('INSERT INTO `t_...')
+#1 /var/www/html/wwo/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 /var/www/html/wwo/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 /var/www/html/wwo/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 /var/www/html/wwo/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/wwo/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 /var/www/html/wwo/app/Controllers/Administator.php(43): CodeIgniter\Model->save(Array)
+#7 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#8 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#9 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-30 04:08:50 --> Duplicate entry '0' for key 'PRIMARY'
+#0 /var/www/html/wwo/system/Database/MySQLi/Connection.php(331): mysqli->query('INSERT INTO `t_...')
+#1 /var/www/html/wwo/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 /var/www/html/wwo/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 /var/www/html/wwo/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 /var/www/html/wwo/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/wwo/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 /var/www/html/wwo/app/Controllers/Administator.php(43): CodeIgniter\Model->save(Array)
+#7 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#8 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#9 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-30 04:10:41 --> Undefined variable: i
+#0 /var/www/html/wwo/app/Controllers/Administator.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/html/w...', 36, Array)
+#1 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#2 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#3 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-30 04:11:03 --> Too few arguments to function CodeIgniter\Model::save(), 0 passed in /var/www/html/wwo/app/Controllers/Administator.php on line 45 and exactly 1 expected
+#0 /var/www/html/wwo/app/Controllers/Administator.php(45): CodeIgniter\Model->save()
+#1 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#2 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#3 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-30 04:11:34 --> Too few arguments to function CodeIgniter\Model::save(), 0 passed in /var/www/html/wwo/app/Controllers/Administator.php on line 45 and exactly 1 expected
+#0 /var/www/html/wwo/app/Controllers/Administator.php(45): CodeIgniter\Model->save()
+#1 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#2 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#3 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-30 04:11:39 --> Too few arguments to function CodeIgniter\Model::save(), 0 passed in /var/www/html/wwo/app/Controllers/Administator.php on line 45 and exactly 1 expected
+#0 /var/www/html/wwo/app/Controllers/Administator.php(45): CodeIgniter\Model->save()
+#1 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#2 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#3 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-30 07:52:18 --> Too few arguments to function CodeIgniter\Model::save(), 0 passed in /var/www/html/wwo/app/Controllers/Administator.php on line 45 and exactly 1 expected
+#0 /var/www/html/wwo/app/Controllers/Administator.php(45): CodeIgniter\Model->save()
+#1 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#2 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#3 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-30 07:58:08 --> Too few arguments to function CodeIgniter\Model::save(), 0 passed in /var/www/html/wwo/app/Controllers/Administator.php on line 45 and exactly 1 expected
+#0 /var/www/html/wwo/app/Controllers/Administator.php(45): CodeIgniter\Model->save()
+#1 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#2 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#3 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-30 08:01:28 --> Too few arguments to function CodeIgniter\Model::save(), 0 passed in /var/www/html/wwo/app/Controllers/Administator.php on line 45 and exactly 1 expected
+#0 /var/www/html/wwo/app/Controllers/Administator.php(45): CodeIgniter\Model->save()
+#1 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#2 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#3 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-30 08:07:59 --> Too few arguments to function CodeIgniter\Model::save(), 0 passed in /var/www/html/wwo/app/Controllers/Administator.php on line 44 and exactly 1 expected
+#0 /var/www/html/wwo/app/Controllers/Administator.php(44): CodeIgniter\Model->save()
+#1 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#2 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#3 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-30 08:26:00 --> Duplicate entry '0' for key 'PRIMARY'
+#0 /var/www/html/wwo/system/Database/MySQLi/Connection.php(331): mysqli->query('INSERT INTO `t_...')
+#1 /var/www/html/wwo/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 /var/www/html/wwo/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 /var/www/html/wwo/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 /var/www/html/wwo/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/wwo/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 /var/www/html/wwo/app/Controllers/Administator.php(41): CodeIgniter\Model->save(Array)
+#7 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#8 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#9 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-30 08:28:28 --> Column 'email' cannot be null
+#0 /var/www/html/wwo/system/Database/MySQLi/Connection.php(331): mysqli->query('INSERT INTO `t_...')
+#1 /var/www/html/wwo/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 /var/www/html/wwo/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 /var/www/html/wwo/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 /var/www/html/wwo/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/wwo/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 /var/www/html/wwo/app/Controllers/Administator.php(41): CodeIgniter\Model->save(Array)
+#7 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#8 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#9 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-30 08:28:54 --> Duplicate entry '0' for key 'PRIMARY'
+#0 /var/www/html/wwo/system/Database/MySQLi/Connection.php(331): mysqli->query('INSERT INTO `t_...')
+#1 /var/www/html/wwo/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 /var/www/html/wwo/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 /var/www/html/wwo/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 /var/www/html/wwo/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/wwo/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 /var/www/html/wwo/app/Controllers/Administator.php(41): CodeIgniter\Model->save(Array)
+#7 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#8 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#9 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-30 08:39:14 --> Duplicate entry '0' for key 'PRIMARY'
+#0 /var/www/html/wwo/system/Database/MySQLi/Connection.php(331): mysqli->query('INSERT INTO `t_...')
+#1 /var/www/html/wwo/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 /var/www/html/wwo/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 /var/www/html/wwo/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 /var/www/html/wwo/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/wwo/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 /var/www/html/wwo/app/Controllers/Administator.php(41): CodeIgniter\Model->save(Array)
+#7 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#8 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#9 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-30 08:39:38 --> Column 'email' cannot be null
+#0 /var/www/html/wwo/system/Database/MySQLi/Connection.php(331): mysqli->query('INSERT INTO `t_...')
+#1 /var/www/html/wwo/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 /var/www/html/wwo/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 /var/www/html/wwo/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 /var/www/html/wwo/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/wwo/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 /var/www/html/wwo/app/Controllers/Administator.php(41): CodeIgniter\Model->save(Array)
+#7 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#8 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#9 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-30 08:57:35 --> Duplicate entry '0' for key 'PRIMARY'
+#0 /var/www/html/wwo/system/Database/MySQLi/Connection.php(331): mysqli->query('INSERT INTO `t_...')
+#1 /var/www/html/wwo/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 /var/www/html/wwo/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 /var/www/html/wwo/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 /var/www/html/wwo/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/wwo/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 /var/www/html/wwo/app/Controllers/Administator.php(42): CodeIgniter\Model->save(Array)
+#7 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#8 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#9 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-30 09:12:18 --> Call to undefined function App\Controllers\float()
+#0 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#1 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#2 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-30 09:13:11 --> Cannot access protected property App\Models\M_user::$primaryKey
+#0 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#1 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#2 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-30 09:13:50 --> Column 'email' cannot be null
+#0 /var/www/html/wwo/system/Database/MySQLi/Connection.php(331): mysqli->query('INSERT INTO `t_...')
+#1 /var/www/html/wwo/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 /var/www/html/wwo/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 /var/www/html/wwo/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 /var/www/html/wwo/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/wwo/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 /var/www/html/wwo/app/Controllers/Administator.php(42): CodeIgniter\Model->save(Array)
+#7 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#8 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#9 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-30 09:14:08 --> Duplicate entry '0' for key 'PRIMARY'
+#0 /var/www/html/wwo/system/Database/MySQLi/Connection.php(331): mysqli->query('INSERT INTO `t_...')
+#1 /var/www/html/wwo/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 /var/www/html/wwo/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 /var/www/html/wwo/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 /var/www/html/wwo/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/wwo/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 /var/www/html/wwo/app/Controllers/Administator.php(42): CodeIgniter\Model->save(Array)
+#7 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#8 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#9 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}

@@ -1,0 +1,21 @@
+CRITICAL - 2020-09-29 00:16:41 --> Undefined variable: data
+#0 /var/www/html/wwo/app/Controllers/Administator.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/html/w...', 31, Array)
+#1 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->addUser()
+#2 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#3 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-29 00:19:54 --> syntax error, unexpected '{'
+#0 /var/www/html/wwo/system/Router/Router.php(195): CodeIgniter\Router\Router->autoRoute('administator/ad...')
+#1 /var/www/html/wwo/system/CodeIgniter.php(793): CodeIgniter\Router\Router->handle('administator/ad...')
+#2 /var/www/html/wwo/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-29 02:19:10 --> syntax error, unexpected '}'
+#0 /var/www/html/wwo/system/Router/Router.php(195): CodeIgniter\Router\Router->autoRoute('administator/ad...')
+#1 /var/www/html/wwo/system/CodeIgniter.php(793): CodeIgniter\Router\Router->handle('administator/ad...')
+#2 /var/www/html/wwo/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

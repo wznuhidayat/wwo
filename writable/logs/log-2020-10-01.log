@@ -1,0 +1,17 @@
+CRITICAL - 2020-10-01 00:21:25 --> Undefined variable: totalTime
+#0 /var/www/html/wwo/system/Debug/Toolbar/Views/toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/var/www/html/w...', 56, Array)
+#1 /var/www/html/wwo/system/Debug/Toolbar.php(498): include('/var/www/html/w...')
+#2 /var/www/html/wwo/system/Debug/Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 /var/www/html/wwo/app/Config/Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 /var/www/html/wwo/system/Events/Events.php(188): call_user_func(Object(Closure))
+#6 /var/www/html/wwo/system/CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-01 00:44:58 --> Too few arguments to function CodeIgniter\Model::save(), 0 passed in /var/www/html/wwo/app/Controllers/Administator.php on line 45 and exactly 1 expected
+#0 /var/www/html/wwo/app/Controllers/Administator.php(45): CodeIgniter\Model->save()
+#1 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->saveUser()
+#2 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#3 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

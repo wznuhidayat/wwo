@@ -1,0 +1,19 @@
+CRITICAL - 2020-09-16 20:29:29 --> syntax error, unexpected ''content'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /var/www/html/wwo/system/Router/Router.php(195): CodeIgniter\Router\Router->autoRoute('administator')
+#1 /var/www/html/wwo/system/CodeIgniter.php(793): CodeIgniter\Router\Router->handle('administator')
+#2 /var/www/html/wwo/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-16 20:30:53 --> Invalid file: admin/dashboard.php
+#0 /var/www/html/wwo/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/dashboard...')
+#1 /var/www/html/wwo/system/Common.php(1119): CodeIgniter\View\View->render('admin/dashboard', Array, true)
+#2 /var/www/html/wwo/app/Views/template_admin.php(4): view('admin/dashboard')
+#3 /var/www/html/wwo/system/View/View.php(246): include('/var/www/html/w...')
+#4 /var/www/html/wwo/system/Common.php(1119): CodeIgniter\View\View->render('template_admin', Array, true)
+#5 /var/www/html/wwo/app/Controllers/Administator.php(11): view('template_admin', Array)
+#6 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Administator->index()
+#7 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administator))
+#8 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}

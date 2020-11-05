@@ -1,0 +1,9 @@
+CRITICAL - 2020-09-15 03:20:15 --> Invalid file: hellow.php
+#0 /var/www/html/wwo/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('hellow.php')
+#1 /var/www/html/wwo/system/Common.php(1119): CodeIgniter\View\View->render('hellow', Array, true)
+#2 /var/www/html/wwo/app/Controllers/Home.php(10): view('hellow')
+#3 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Home->test()
+#4 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}

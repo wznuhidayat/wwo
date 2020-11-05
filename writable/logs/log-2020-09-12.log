@@ -1,0 +1,39 @@
+CRITICAL - 2020-09-12 06:09:45 --> Invalid file: hello world.php
+#0 /var/www/html/wwo/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('hello world.php')
+#1 /var/www/html/wwo/system/Common.php(1119): CodeIgniter\View\View->render('hello world', Array, true)
+#2 /var/www/html/wwo/app/Controllers/Home.php(7): view('hello world')
+#3 /var/www/html/wwo/system/CodeIgniter.php(918): App\Controllers\Home->index()
+#4 /var/www/html/wwo/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-12 06:10:00 --> syntax error, unexpected 'echo' (T_ECHO), expecting ';'
+#0 /var/www/html/wwo/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('/var/www/html/w...')
+#1 /var/www/html/wwo/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /var/www/html/wwo/system/CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 /var/www/html/wwo/system/CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-12 06:10:04 --> syntax error, unexpected 'echo' (T_ECHO), expecting ';'
+#0 /var/www/html/wwo/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('/var/www/html/w...')
+#1 /var/www/html/wwo/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /var/www/html/wwo/system/CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 /var/www/html/wwo/system/CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-12 06:10:19 --> syntax error, unexpected 'echo' (T_ECHO), expecting ';'
+#0 /var/www/html/wwo/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('/var/www/html/w...')
+#1 /var/www/html/wwo/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /var/www/html/wwo/system/CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 /var/www/html/wwo/system/CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 /var/www/html/wwo/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/wwo/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
